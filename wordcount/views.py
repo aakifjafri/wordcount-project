@@ -5,15 +5,6 @@ import operator
 def homepage(request):
     return render(request, 'home.html', {'hithere':'This is me...'})
 
-def eggs(request):
-    return HttpResponse('<h1>Eggs are Great!</h1>')
-
-def food(request):
-	return HttpResponse('<h1>Food is the BEST thing. but not of my mess!</h1')
-
-def football(request):
-	return HttpResponse('<h1>Christiano RONALDO!</h1>')
-
 def about(request):
 	return render(request, 'about.html')
  
